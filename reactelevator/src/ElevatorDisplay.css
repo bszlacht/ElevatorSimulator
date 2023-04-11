@@ -1,0 +1,25 @@
+.elevator-container {
+  width: 100px;
+  height: 1417px;
+  border: 1px solid #000;
+  position:relative;
+  box-sizing: border-box;
+}
+
+.elevator-parent {
+  display:inline-block;
+  margin-left: 10px;
+}
+.elevator-div {
+  display: flex;
+}
+
+.elevator {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ff9800;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  position:absolute;
+}
