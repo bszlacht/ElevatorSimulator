@@ -33,8 +33,8 @@ public class ElevatorService implements ElevatorSystem {
         elevator.addFloor(floor);
     }
 
+    @Override
     public void clickElevatorButtons(Integer id, List<Integer> floors) {
-        // todo maybe add this to interface?
         floors.forEach(floor -> elevatorRepository.addDirectionToElevator(id, floor));
     }
 }
