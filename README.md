@@ -90,6 +90,7 @@ public Elevator getNearestElevatorWithCorrectDirection(Integer floor, FloorButto
         return bestElevator;
     }
 ```
+This approach optimizes the use of energy and time. First of all you choose only the closest elevator and by assuring the direction you safe time of the passangers.
 ## Overall strong and weak parts
 ### What went right:
 1. The backend is java is clear.
