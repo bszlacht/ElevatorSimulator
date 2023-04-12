@@ -50,10 +50,6 @@ public class ElevatorRepository {
         elevators.get(id).addFloor(floor);
     }
 
-    public Elevator getSingleStationaryElevator() {
-        // todo fix into Optional.Empty etc.
-        return elevators.values().stream().filter(el -> el.getDirection() == 0).findFirst().orElse(null);
-    }
 
     public Elevator getNearestElevator(Integer floor) {
         Elevator bestElevator = null;
@@ -66,7 +62,7 @@ public class ElevatorRepository {
         return bestElevator;
     }
 
-    public Elevator getSingleElevatorWithGoodDirection(Integer floor, FloorButton button) {
+    public Elevator getNearestElevatorWithCorrectDirection(Integer floor, FloorButton button) {
         //  here I think stream is not so readable
         Elevator bestElevator = null;
         int minDistance = Integer.MAX_VALUE;

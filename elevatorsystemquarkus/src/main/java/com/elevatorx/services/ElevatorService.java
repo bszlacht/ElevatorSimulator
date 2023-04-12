@@ -26,17 +26,9 @@ public class ElevatorService implements ElevatorSystem {
 
     @Override
     public void pickUp(Integer floor, FloorButton button) {
-        // request income from floor
-        //  1. Get the nearest stationary elevator
-        //  2. If there aren't any, choose one that moves in your direction
-        //  3. Else wait.
-        Elevator elevator = elevatorRepository.getSingleElevatorWithGoodDirection(floor, button);
-
+        Elevator elevator = elevatorRepository.getNearestElevatorWithCorrectDirection(floor, button);
         if (elevator == null) {
-            elevator = elevatorRepository.getSingleStationaryElevator();
-            if (elevator == null){
-                elevator = elevatorRepository.getNearestElevator(floor);
-            }
+            elevator = elevatorRepository.getNearestElevator(floor);
         }
         elevator.addFloor(floor);
     }

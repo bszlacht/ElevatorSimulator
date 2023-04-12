@@ -10,7 +10,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Collections;
 
-// TODO DTO work
 @ApplicationScoped
 @Path("/elevator")
 public class ElevatorAPI {
