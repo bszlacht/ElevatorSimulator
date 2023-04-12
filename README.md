@@ -18,7 +18,10 @@ Two main parts are:
   * Perform next step of simulation and view results.
   * Click elevator button on a floor.
   * Click floor button inside the elevator.
+  ![Alt text](/form.png?raw=true "Form")
 2. Elevators visualization.
+  ![Alt text](/full.png?raw=true "Full page")
+
 ### Strong and weak parts
 + I am new in React, the code is ugly ...
 + ... but it does it's job.
