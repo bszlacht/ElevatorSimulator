@@ -9,7 +9,11 @@ You can run the frontend by going into it's main directory and running:
 ```
 > npm start
 ```
-Running backend is a little more complicated and is explained in backend quarkus Readme.
+Running backend:
+```
+> mvn quarkus:dev
+```
+This shoud do the trick (works for me, if something is wrong please contact me). Remember you need to have java and maven installed. Specific requirenments are in pom.xml
 ## Frontend
 Frontend is written in REACT. Consists of one App.js which is a simple function with hooks and ElevatorDisplay.js that contains elevators that will be displayed on our screen.
 ### Interface
@@ -18,7 +22,10 @@ Two main parts are:
   * Perform next step of simulation and view results.
   * Click elevator button on a floor.
   * Click floor button inside the elevator.
+  ![Alt text](/form.png?raw=true "Form")
 2. Elevators visualization.
+  ![Alt text](/full.png?raw=true "Full page")
+
 ### Strong and weak parts
 + I am new in React, the code is ugly ...
 + ... but it does it's job.
@@ -101,3 +108,4 @@ This approach optimizes the use of energy and time. First of all you choose only
 2. Maybe using Rest isn't a good idea. I think running the simulation on backend with while loop + web socket could be better.
 3. In API layer I coud use DTO object, but this is a simple app so I stayed with simple arguments.
 4. Working on null on backend as a return value is not a good practice. It is better to work with Optional.
+5. I shoud have written some tests, but the app is so small (I know it is not an excues) that i testes the most important functionalities and pushed in on prod.
