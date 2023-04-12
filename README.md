@@ -13,7 +13,7 @@ Running backend:
 ```
 > mvn quarkus:dev
 ```
-This shoud do the trick (works for me, if something is wrong please contact me).
+This shoud do the trick (works for me, if something is wrong please contact me). Remember you need to have java and maven installed. Specific requirenments are in pom.xml
 ## Frontend
 Frontend is written in REACT. Consists of one App.js which is a simple function with hooks and ElevatorDisplay.js that contains elevators that will be displayed on our screen.
 ### Interface
