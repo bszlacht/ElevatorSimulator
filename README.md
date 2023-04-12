@@ -108,3 +108,4 @@ This approach optimizes the use of energy and time. First of all you choose only
 2. Maybe using Rest isn't a good idea. I think running the simulation on backend with while loop + web socket could be better.
 3. In API layer I coud use DTO object, but this is a simple app so I stayed with simple arguments.
 4. Working on null on backend as a return value is not a good practice. It is better to work with Optional.
+5. I shoud have written some tests, but the app is so small (I know it is not an excues) that i testes the most important functionalities and pushed in on prod.
