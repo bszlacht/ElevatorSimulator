@@ -11,8 +11,7 @@ You can run the frontend by going into it's main directory and running:
 ```
 Running backend:
 ```
-> mvn clean
-> mvn install
+> mvn quarkus:dev
 ```
 This shoud do the trick (works for me, if something is wrong please contact me).
 ## Frontend
