@@ -9,7 +9,12 @@ You can run the frontend by going into it's main directory and running:
 ```
 > npm start
 ```
-Running backend is a little more complicated and is explained in backend quarkus Readme.
+Running backend:
+```
+> mvn clean
+> mvn install
+```
+This shoud do the trick (works for me, if something is wrong please contact me).
 ## Frontend
 Frontend is written in REACT. Consists of one App.js which is a simple function with hooks and ElevatorDisplay.js that contains elevators that will be displayed on our screen.
 ### Interface
